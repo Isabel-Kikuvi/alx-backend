@@ -7,14 +7,14 @@ BaseCaching = __import__('base_caching').BaseCaching
 
 
 class BasicCache(BaseCaching):
-    """_summary_"""
+    """_BasicCache class that inherits from BaseCaching"""
 
     def __init__(self):
         """initializa the class"""
         super().__init__()
 
     def put(self, key, item):
-        """summary"""
+        """adds items in the cache"""
         if key is None or item is None:
             pass
         else:
