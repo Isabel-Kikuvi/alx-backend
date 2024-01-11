@@ -8,7 +8,7 @@ BaseCaching = __import__('base_caching').BaseCaching
 
 
 class FIFOCache(BaseCaching):
-    """summary"""
+    """BasicCache class that inherits from BaseCaching"""
 
     def __init__(self):
         """summary"""
