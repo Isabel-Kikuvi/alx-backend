@@ -2,13 +2,8 @@
 """ Basic Flask App"""
 
 from flask import Flask, render_template
-from flask_babel import Babel
-
 
 app = Flask(__name__)
-babel = Babel(app)
-app.config.from_object(Config)
-
 
 @app.route('/')
 def index():
@@ -17,4 +12,4 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port="5000", host='0.0.0.0', debug=True)
