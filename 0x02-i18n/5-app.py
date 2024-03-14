@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""a simple flask application 
+"""a simple flask application
 """
 
 
@@ -57,7 +57,6 @@ def get_locale():
         return locale
 
     return request.accept_languages.best_match(app.config['LANGUAGES'])
-
 
 
 @app.route('/')
